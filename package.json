@@ -1,6 +1,6 @@
 {
   "name": "cordova-zebra-bxsdk-printer",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "description": "Print on a Zebra Printer",
   "cordova": {
     "id": "com.axo-corp.cordovazebrazq110",
