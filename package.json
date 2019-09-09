@@ -1,0 +1,33 @@
+{
+  "name": "cordova-zebra-bxsdk-printer",
+  "version": "0.0.1",
+  "description": "Print on a Zebra Printer",
+  "cordova": {
+    "id": "com.axo-corp.cordovazebrazq110",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JobSoltero/cordova-zebra-zq110.git"
+  },
+  "keywords": [
+    "zebra", "zq110"
+  ],
+  "author": "Job Soltero",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/JobSoltero/cordova-zebra-zq110/issues"
+  },
+  "homepage": "https://github.com/JobSoltero/cordova-zebra-zq110",
+  "dependencies": {
+
+  },
+  "scripts": {
+
+  },
+  "devDependencies": {
+
+  }
+}

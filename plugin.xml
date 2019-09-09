@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="com.axo-corp.cordovazebrazq110" version="0.0.1">
+    <engines>
+        <engine name="cordova" version="&gt;=3.4.0" />
+    </engines>
+
+    <asset src="www/cordovaprint.js" target="js/cordovaprint.js"/>
+    <js-module src="www/cordovaprint.js" name="cordovaprint">
+        <clobbers target="cordovaprint" />
+    </js-module>
+
+    <name>CordovaZebraZQ110</name>
+    <description>Print on a Zebra ZQ110 Printer</description>
+    <author>AXOVIA</author>
+    <keywords>Zebra</keywords>
+    <license>Apache 2.0 License</license>
+
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="CordovaPrinter">
+                <param name="ios-package" value="CordovaPrinter" />
+            </feature>
+        </config-file>
+        <config-file target="*-Info.plist" parent="UISupportedExternalAccessoryProtocols">
+            <array>
+                <string>com.zebra.rawport</string>
+            </array>
+        </config-file>
+
+        <header-file src="src/ios/CordovaPrinter.h" />
+        <source-file src="src/ios/CordovaPrinter.m" />
+        <header-file src="src/ios/zebra/include/BXBarcodeInfo.h" />
+        <header-file src="src/ios/zebra/include/BXCode.h" />
+        <header-file src="src/ios/zebra/include/BXPrinterControlDelegate.h" />
+        <header-file src="src/ios/zebra/include/BXPrinterController.h" />
+        <header-file src="src/ios/zebra/include/BXPrinterObjects.h" />
+        <header-file src="src/ios/zebra/include/Commonl.h" />
+        <header-file src="src/ios/zebra/include/Defines.h" />
+        <header-file src="src/ios/zebra/include/IControllerDelegate.h" />
+        <header-file src="src/ios/zebra/include/InterfaceFunctionsDelegate.h" />
+        <header-file src="src/ios/zebra/include/NetFunctionsDelegate.h" />
+        <header-file src="src/ios/zebra/include/UDPServerDelegate.h" />
+        <source-file src="src/ios/zebra/libBXSDK.a" framework="true" />
+        <framework src="ExternalAccessory.framework" />
+    </platform>
+
+</plugin>
