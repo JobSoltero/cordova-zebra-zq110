@@ -34,7 +34,7 @@
         <header-file src="src/ios/zebra/include/BXPrinterControlDelegate.h" />
         <header-file src="src/ios/zebra/include/BXPrinterController.h" />
         <header-file src="src/ios/zebra/include/BXPrinterObjects.h" />
-        <header-file src="src/ios/zebra/include/Commonl.h" />
+        <header-file src="src/ios/zebra/include/Common.h" />
         <header-file src="src/ios/zebra/include/Defines.h" />
         <header-file src="src/ios/zebra/include/IControllerDelegate.h" />
         <header-file src="src/ios/zebra/include/InterfaceFunctionsDelegate.h" />
